@@ -340,9 +340,18 @@ header .navbar ul li a:hover {
 /* social icons end */
 
 /* hero media queries starts*/
+@media (max-width: 768px) {
+  .home{
+    margin-top: 6rem;
+  }
+}
+
 @media (max-width: 450px) {
   .home .btn {
     margin: 4rem 0;
+  }
+  .home{
+    margin-top: 2rem;
   }
   .socials {
     margin-top: 12rem;
@@ -352,6 +361,10 @@ header .navbar ul li a:hover {
   }
   .home .content p {
     font-size: 2.2rem;
+  }
+  .home .content h2 {
+    font-size: 3.5rem;
+    gap: .5rem;
   }
   .home .content p span {
     font-size: 2.2rem;
@@ -551,13 +564,10 @@ header .navbar ul li a:hover {
 /* skills section ends */
 
 
-/* project*/
-
 .project{
   background-color:#e5ecfb ;
 }
 .project h2{
-  
   margin-bottom: 4rem;
 }
 .portfolio_container{
@@ -566,7 +576,7 @@ header .navbar ul li a:hover {
   align-items: center;
   gap: 2.5rem;
 }
- .portfolio_container .portfolio_box{
+.portfolio_container .portfolio_box{
   position: relative;
   border-radius: 2rem;
   box-shadow:0 0 1rem  #57059e;
@@ -597,13 +607,12 @@ header .navbar ul li a:hover {
   transform: translateY(100%);
   transition: .5s ease;
 }
-.portfolio_box:hover .portfolio_layer
-{
+.portfolio_box:hover .portfolio_layer{
   transform: translateY(0);
 }
 .portfolio_layer h4{
-font-size: 3rem;
-color:rgb(255, 230, 0);
+  font-size: 3rem;
+  color:rgb(255, 230, 0);
 }
 .portfolio_layer p{
   font-size: 1.6rem;
@@ -626,10 +635,58 @@ color:rgb(255, 230, 0);
 }
 .portfolio_layer i:hover{
   font-size:3rem ;
- 
-
   color: white;
 }
+
+/* ------------------ 📱 Responsive Media Queries ------------------ */
+
+/* Large Tablets & Small Laptops */
+@media (max-width: 1024px) {
+  .portfolio_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .portfolio_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .portfolio_layer h4 {
+    font-size: 2.4rem;
+  }
+  .portfolio_layer p {
+    font-size: 1.4rem;
+  }
+  .portfolio_layer a {
+    width: 8rem;
+    height: 4rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .portfolio_container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .portfolio_layer h4 {
+    font-size: 2rem;
+  }
+  .portfolio_layer p {
+    font-size: 1.2rem;
+  }
+  .portfolio_layer a {
+    width: 7rem;
+    height: 3.5rem;
+  }
+  .portfolio_layer i {
+    font-size: 1.6rem;
+  }
+}
+
+
 
 /* education section starts */
 .education {
