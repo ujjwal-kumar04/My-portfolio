@@ -616,8 +616,8 @@ header .navbar ul li a:hover {
   color:rgb(255, 230, 0);
 }
 .portfolio_layer p{
-  font-size: 1.6rem;
-  margin: .3rem 0 1rem;
+  font-size: 1rem;
+  margin: .2rem 0 1rem;
   color:white;
 }
 .portfolio_layer a{
